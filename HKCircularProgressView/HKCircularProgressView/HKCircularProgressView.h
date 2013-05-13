@@ -51,15 +51,15 @@
  */
 - (void)stopAnimating;
 
-@property (nonatomic) UIColor                               *progressTintColor  UI_APPEARANCE_SELECTOR;
-@property (nonatomic) UIColor                               *trackTintColor     UI_APPEARANCE_SELECTOR;
-@property (nonatomic) UIColor                               *outlineTintColor   UI_APPEARANCE_SELECTOR;
+@property (nonatomic, strong) UIColor                               *progressTintColor  UI_APPEARANCE_SELECTOR;
+@property (nonatomic, strong) UIColor                               *trackTintColor     UI_APPEARANCE_SELECTOR;
+@property (nonatomic, strong) UIColor                               *outlineTintColor   UI_APPEARANCE_SELECTOR;
 @property (nonatomic) CGFloat                               outlineWidth        UI_APPEARANCE_SELECTOR;
 @property (nonatomic) CFTimeInterval                        animationDuration   UI_APPEARANCE_SELECTOR;
 @property (nonatomic) float                                 fillRadius          UI_APPEARANCE_SELECTOR;
 @property (nonatomic) float                                 startAngle          UI_APPEARANCE_SELECTOR;
 @property (nonatomic) BOOL                                  drawFullTrack       UI_APPEARANCE_SELECTOR;
-@property (nonatomic) id<HKCircularProgressEndPointDrawer>  endPoint            UI_APPEARANCE_SELECTOR;
+@property (nonatomic, strong) id<HKCircularProgressEndPointDrawer>  endPoint            UI_APPEARANCE_SELECTOR;
 
 @property (nonatomic) float             step;
 @property (nonatomic) float             max;

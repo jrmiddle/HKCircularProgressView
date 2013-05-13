@@ -55,15 +55,15 @@
 
 @interface HKCircularProgressLayer : CALayer
 
-@property (nonatomic) UIColor                           *progressTintColor;
-@property (nonatomic) UIColor                           *trackTintColor;
-@property (nonatomic) UIColor                           *outlineTintColor;
+@property (nonatomic, strong) UIColor                           *progressTintColor;
+@property (nonatomic, strong) UIColor                           *trackTintColor;
+@property (nonatomic, strong) UIColor                           *outlineTintColor;
 @property (nonatomic) CGFloat                           outlineWidth;
 @property (nonatomic) CFTimeInterval                    animationDuration;
 @property (nonatomic) float                             fillRadius;
 @property (nonatomic) float                             startAngle;
 @property (nonatomic) BOOL                              drawFullTrack;
-@property (nonatomic) id<HKCircularProgressEndPointDrawer> endPoint;
+@property (nonatomic, strong) id<HKCircularProgressEndPointDrawer> endPoint;
 
 @property (nonatomic) float             step;
 @property (nonatomic) float             max;
